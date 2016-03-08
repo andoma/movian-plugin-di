@@ -54,13 +54,14 @@
     var json = showtime.JSONDecode(doc);
 
     var channels = json.channels.filter(function(x) { return !(x.key in non_working);});
-    console.log(channels);
+
+    channels.sort(function (a, b) { return a.key.localeCompare(b.key);});
+
     for (var i in channels) {
       var entity = channels[i];
       var icon = entity.images.default.match(/(^[^\{]*)/)[1];
       page.appendItem('icecast:http://pub2.diforfree.org:8000/di_'+ entity.key + '_hi', 'station', {
 	station: entity.name,
-	title: entity.name,
 	description: entity.description_short,
 	icon: icon.substr(0, 4) == 'http' ? icon : 'http:' + icon + '?size=150x150',
 	album_art: icon.substr(0, 4) == 'http' ? icon : 'http:' + icon + '?size=150x150',
