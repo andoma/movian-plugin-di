@@ -3,7 +3,7 @@
 	"author": "Andreas Smas, Henrik Andersson, lprot",
 	"title": "Digitally Imported",
 	"synopsis": "Addictive Electronic Music 24/7",
-	"version": "0.6",
+	"version": "0.6.1",
 	"file": "di.js",
 	"showtimeVersion": "4.8",
 	"type": "ecmascript",

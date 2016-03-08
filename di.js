@@ -23,7 +23,7 @@
   var non_working = {
     atmosphericbreaks: true,
     indiebeats: true,
-    elctro: true,
+    electro: true,
     glitchhop: true,
     classictechno: true,
     detroithousentechno: true,
