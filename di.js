@@ -18,10 +18,9 @@
  */
 
 (function(plugin) {
-  var logo = plugin.path + 'di_square.png';
+  var logo = plugin.path + 'di.svg';
 
   var non_working = {
-    atmosphericbreaks: true,
     indiebeats: true,
     electro: true,
     glitchhop: true,
@@ -46,7 +45,7 @@
     } else
       page.model.contents = 'grid';
 
-    page.metadata.logo = logo;
+    page.metadata.icon = logo;
     page.metadata.title = plugin.getDescriptor().title;
     page.loading = true;
     var doc = showtime.httpReq('http://www.di.fm/channels').toString().match(/start\(([\S\s]*?)\);/)[1];
