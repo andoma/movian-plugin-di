@@ -5,7 +5,7 @@
 	"synopsis": "Addictive Electronic Music 24/7",
 	"version": "0.6.2",
 	"file": "di.js",
-	"showtimeVersion": "4.8",
+	"showtimeVersion": "5.0.75",
 	"type": "ecmascript",
 	"id": "di",
 	"icon": "di_square.png",

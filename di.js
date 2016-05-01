@@ -39,11 +39,7 @@
 
   plugin.addURI(plugin.getDescriptor().id + ':start', function(page) {
     page.type = 'directory';
-    if (showtime.currentVersionInt < 49900000) {
-      page.metadata.glwview = plugin.path + 'views/array.view';
-      page.contents = 'items';
-    } else
-      page.model.contents = 'grid';
+    page.model.contents = 'grid';
 
     page.metadata.icon = logo;
     page.metadata.title = plugin.getDescriptor().title;
